@@ -7,6 +7,8 @@ import pandas as pd
 def calculation_group():
     pass
 
+@calculation_group.command()
+@click.option("-n", "--number", default = 10)
 def sin(number):
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
