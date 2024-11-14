@@ -29,4 +29,4 @@ def tan(number):
 
 
 if __name__ == "__main__":
-    sin(10)
+    calculation_group()
